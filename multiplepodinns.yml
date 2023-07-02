@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multiple-pod
+  namespace: green
+  labels:
+    name: mypod
+spec:
+  containers:
+  - name: mypod1
+    image: httpd
+  - name: mypod2
+    image: httpd
+
